@@ -1,19 +1,11 @@
 # Use R language
-language: r#Define multiple R-versions, one from bioconductor
+language: r
 r:
   - oldrel
   - release
   - devel
-  - bioc-devel# Set one of you dependencies from github
-
-r_github_packages: r-lib/testthat
-
-# Set one of your dependencies from CRAN
+  - bioc-devel
 r_packages:
-  - RTest# set a Linux system dependency
   - Metrics
   - e1071
   - plotly
-
-apt_packages:
-  - libxml2-dev
